@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "firetwice (debug)",
+			"request": "launch",
+			"type": "dart",
+			"flutterMode": "debug"
+		},
+		{
+			"name": "firetwice (release)",
+			"request": "launch",
+			"type": "dart",
+			"flutterMode": "release"
+		}
+	]
+}
