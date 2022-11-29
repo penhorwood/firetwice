@@ -6,6 +6,12 @@ import '/firebase_options.dart';
 
 bool setBackgroundCallback = true;
 
+// ==== backgroundRouter ======================================================
+@pragma('vm:entry-point')
+Future<void> backgroundRouter( RemoteMessage message ) async {
+	print('════ backgroundRouter running ══════════════════════════════════════════════════════════');
+}
+
 // ==== Main ============================================================
 void main() async {
 	print('════ main running ══════════════════════════════════════════════════════════════════════');
@@ -39,11 +45,6 @@ void main() async {
 // ==== foregroundRouter ======================================================
 Future<void> foregroundRouter( RemoteMessage message ) async {
 	print('════ foregroundRouter running ══════════════════════════════════════════════════════════');
-}
-
-// ==== backgroundRouter ======================================================
-Future<void> backgroundRouter( RemoteMessage message ) async {
-	print('════ backgroundRouter running ══════════════════════════════════════════════════════════');
 }
 
 // _applePermissions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
